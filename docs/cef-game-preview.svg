@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Концепт CEF-интерфейса RedAge RP в игре</title>
+  <desc id="desc">Визуальный макет игрового HUD и меню в стилистике RedAge RP. Это концепт, а не скриншот запущенной игры.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#263d55"/><stop offset=".58" stop-color="#bd795a"/><stop offset="1" stop-color="#242a31"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#44464a"/><stop offset="1" stop-color="#171a20"/></linearGradient>
+    <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#111923" stop-opacity=".96"/><stop offset="1" stop-color="#10121b" stop-opacity=".94"/></linearGradient>
+    <linearGradient id="accent" x2="1"><stop stop-color="#48e0d0"/><stop offset="1" stop-color="#4199ff"/></linearGradient>
+    <linearGradient id="car" x2="0" y2="1"><stop stop-color="#3a4857"/><stop offset="1" stop-color="#111820"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity=".5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <!-- Stylized Los Santos backdrop -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1270" cy="180" r="78" fill="#ffd29b" opacity=".55"/>
+  <path d="M0 400 130 315 240 380 360 275 500 390 640 300 790 395 920 280 1050 380 1200 260 1360 370 1480 290 1600 355V570H0Z" fill="#41434a" opacity=".72"/>
+  <path d="M0 465 145 390 260 445 390 355 520 445 680 360 810 450 965 350 1110 440 1260 340 1420 430 1530 360 1600 400V610H0Z" fill="#282d35"/>
+  <g fill="#18212a" opacity=".95">
+    <path d="M70 400h110v170H70zM195 435h135v135H195zM355 390h90v180h-90zM460 430h150v140H460zM650 405h120v165H650zM800 430h95v140h-95zM925 390h145v180H925zM1100 425h115v145h-115zM1240 385h135v185h-135zM1400 425h150v145h-150z"/>
+  </g>
+  <g fill="#f7cb88" opacity=".38"><path d="M90 425h12v15H90zm28 0h12v15h-12zm93 30h12v15h-12zm34 0h12v15h-12zm132-40h12v15h-12zm27 0h12v15h-12zm75 35h12v15h-12zm44 0h12v15h-12zm232-25h12v15h-12zm35 0h12v15h-12zm164-5h12v15h-12zm31 0h12v15h-12zm100 25h12v15h-12zm43-55h12v15h-12zm45 0h12v15h-12z"/></g>
+  <rect y="570" width="1600" height="330" fill="url(#ground)"/>
+  <path d="M0 690 1600 625v275H0z" fill="#24272c"/>
+  <path d="M0 778 1600 704" stroke="#c6b995" stroke-width="5" stroke-dasharray="65 45" opacity=".5"/>
+  <!-- Vehicle silhouette -->
+  <g filter="url(#shadow)" transform="translate(620 605)">
+    <path d="M52 105 85 48q13-22 42-27l157-12q34-2 53 24l42 61 47 17q14 6 16 22l3 34H22v-33q0-20 17-28z" fill="url(#car)" stroke="#82a1b7" stroke-opacity=".65" stroke-width="3"/>
+    <path d="m115 47 25-12 139-9q19-1 29 13l28 39H91z" fill="#9ac8d0" opacity=".54"/>
+    <path d="M87 86h246" stroke="#66dfd2" stroke-width="3" opacity=".65"/>
+    <circle cx="95" cy="163" r="29" fill="#11151a" stroke="#747f88" stroke-width="8"/><circle cx="352" cy="163" r="29" fill="#11151a" stroke="#747f88" stroke-width="8"/>
+    <path d="M25 121h34v15H25zm350-4h39v14h-39z" fill="#ffce8b"/>
+  </g>
+  <!-- HUD top bar -->
+  <g font-family="Arial, sans-serif">
+    <rect x="34" y="28" width="1532" height="70" rx="16" fill="#0c1219" fill-opacity=".82" stroke="#ffffff" stroke-opacity=".12"/>
+    <rect x="52" y="45" width="5" height="36" rx="3" fill="url(#accent)"/>
+    <text x="72" y="70" fill="#f5f8fb" font-size="25" font-weight="800" letter-spacing="2">REDAGE</text>
+    <text x="235" y="68" fill="#9daab8" font-size="15" letter-spacing="1">ROLEPLAY</text>
+    <circle cx="1230" cy="62" r="5" fill="#54dfaa"/><text x="1245" y="68" fill="#d5e0e8" font-size="15">СЕРВЕР ДОСТУПЕН</text>
+    <text x="1460" y="69" fill="#f4f7fb" font-size="20" font-weight="700">12:48</text>
+  </g>
+  <!-- left player card -->
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="36" y="125" width="300" height="150" rx="16" fill="url(#panel)" stroke="#66dfd2" stroke-opacity=".38"/>
+    <text x="60" y="163" fill="#8293a5" font-size="13" letter-spacing="2">ПЕРСОНАЖ</text>
+    <text x="60" y="199" fill="#f5f8fb" font-size="24" font-weight="700">Александр Волков</text>
+    <text x="60" y="226" fill="#a8b7c5" font-size="15">Гражданин • ID 2048</text>
+    <rect x="60" y="245" width="245" height="7" rx="4" fill="#26333e"/><rect x="60" y="245" width="190" height="7" rx="4" fill="url(#accent)"/>
+    <text x="60" y="296" fill="#dce5ed" font-size="14">Здоровье</text><text x="301" y="296" fill="#62e6d3" font-size="14" text-anchor="end">78%</text>
+  </g>
+  <!-- minimap -->
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="36" y="664" width="276" height="196" rx="16" fill="#111820" fill-opacity=".93" stroke="#ffffff" stroke-opacity=".16"/>
+    <rect x="48" y="676" width="252" height="150" rx="10" fill="#303d3d"/>
+    <path d="M48 718 300 758M90 676 124 826M220 676 190 826M48 795 300 700" stroke="#c6c7b3" stroke-width="11" opacity=".8"/>
+    <path d="M54 739 294 785M155 676 138 826M263 676 232 826" stroke="#64706c" stroke-width="3" opacity=".9"/>
+    <circle cx="176" cy="750" r="10" fill="#55e5d4" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+    <text x="52" y="849" fill="#c6d1da" font-size="12" letter-spacing="1">LOS SANTOS • ВЕЗУВИУС-БУЛЬВАР</text>
+  </g>
+  <!-- right task card -->
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="1242" y="135" width="322" height="196" rx="16" fill="url(#panel)" stroke="#ffffff" stroke-opacity=".15"/>
+    <text x="1266" y="173" fill="#63e3d3" font-size="13" letter-spacing="2">АКТИВНОЕ ЗАДАНИЕ</text>
+    <text x="1266" y="210" fill="#f6f8fa" font-size="21" font-weight="700">Доставка груза</text>
+    <text x="1266" y="239" fill="#aab7c4" font-size="15">Доставьте посылку в порт</text>
+    <text x="1266" y="265" fill="#aab7c4" font-size="15">и получите оплату за заказ.</text>
+    <rect x="1266" y="286" width="274" height="30" rx="8" fill="#183b3c"/>
+    <text x="1403" y="307" fill="#67e5d4" font-size="13" text-anchor="middle" font-weight="700">МЕТКА УСТАНОВЛЕНА</text>
+  </g>
+  <!-- right needs / money -->
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="1360" y="365" width="204" height="108" rx="14" fill="#0c1219" fill-opacity=".84" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="1380" y="397" fill="#8e9eac" font-size="12" letter-spacing="1.5">БАЛАНС</text>
+    <text x="1380" y="430" fill="#f4f7fa" font-size="25" font-weight="700">$ 24 580</text>
+    <text x="1380" y="455" fill="#62e6d3" font-size="13">+$ 320 за смену</text>
+  </g>
+  <!-- bottom controls -->
+  <g font-family="Arial, sans-serif">
+    <rect x="518" y="820" width="564" height="52" rx="14" fill="#0d141c" fill-opacity=".9" stroke="#ffffff" stroke-opacity=".13"/>
+    <rect x="536" y="832" width="30" height="28" rx="6" fill="#e9f2f6"/><text x="551" y="852" fill="#15202a" font-size="15" text-anchor="middle" font-weight="700">M</text><text x="577" y="851" fill="#d9e2e8" font-size="14">Меню</text>
+    <rect x="672" y="832" width="30" height="28" rx="6" fill="#e9f2f6"/><text x="687" y="852" fill="#15202a" font-size="15" text-anchor="middle" font-weight="700">I</text><text x="713" y="851" fill="#d9e2e8" font-size="14">Инвентарь</text>
+    <rect x="846" y="832" width="30" height="28" rx="6" fill="#e9f2f6"/><text x="861" y="852" fill="#15202a" font-size="15" text-anchor="middle" font-weight="700">N</text><text x="887" y="851" fill="#d9e2e8" font-size="14">Телефон</text>
+  </g>
+  <!-- concept notice -->
+  <rect x="1192" y="826" width="372" height="44" rx="12" fill="#0c1219" fill-opacity=".76"/>
+  <text x="1378" y="853" fill="#aab7c4" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">КОНЦЕПТ • НЕ СКРИНШОТ ИГРОВОЙ СБОРКИ</text>
+</svg>
